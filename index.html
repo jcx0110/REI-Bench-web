@@ -816,12 +816,7 @@
 
   <h3>Prompting Method</h3>
   <p class="text-default">
-    We evaluate two novel NLP methods: the aware prompt (AP), which explicitly adds one guidance prompt to indicate possible REs, 
-    and Chain-of-Thought (CoT), which guides the planner to resolve REs step by step before planning. 
-    However, AP tells the planner to resolve REs even when none exist, so it fabricates references and hallucinates, 
-    while CoT significantly increases response time to planners.
-    To this end, we propose a simple yet effective method, task-oriented context cognition (TOCC), 
-    which prompts the planner to resolve the implicit REs in the instruction and rephrase it to a more concise and straightforward one. 
+    We evaluate three conventional prompting methods to alleviate coreferential vagueness in robot planning: aware prompt (AP), Chain-of-Thought (CoT), and In-Context Learning (ICL). However, AP remains insufficient as it fails to induce the deep reasoning required for implicit REs, while both CoT and ICL substantially lengthen prompts, hindering performance on resource-constrained onboard hardware. To this end, we propose a simple yet effective method, task-oriented context cognition (TOCC), which decouples RE resolution from the planning process by prompting the planner to resolve implicit REs and rephrase instructions into a concise form before planning.
   </p>
   <img src="media\figure-promptingMethod.png" alt="Teaser Image" />
   <p class="text-default">
