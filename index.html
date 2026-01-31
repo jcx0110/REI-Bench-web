@@ -427,15 +427,13 @@
         However, real-world users are not experts, and their instructions to robots often contain significant vagueness. 
         Linguists suggest that such vagueness frequently arises from referring expressions (REs), 
         whose meanings depend heavily on dialogue context and environment. 
-        This vagueness is even more prevalent among the elderly and children, who robots should serve more. 
+        This vagueness is even more prevalent among the elderly and children, who are the groups that robots should serve more. 
         This paper studies how such vagueness in REs within human instructions affects LLM-based robot task planning and how to overcome this issue. 
-        To this end, we propose the first robot task planning benchmark with vague REs (REI-Bench), 
-        where we discover that the vagueness of REs can severely degrade robot planning performance, 
-        leading to success rate drops of up to 77.9%. We also observe that most failure cases stem from missing objects in planners. 
-        To mitigate the REs issue, we propose a simple yet effective approach: task-oriented context cognition,
-         which generates clear instructions for robots, achieving state-of-the-art performance compared to aware prompt and chains of thought. 
-         This work contributes to the research community of human-robot interaction (HRI) by making robot task planning more practical, 
-         particularly for non-expert users, e.g., the elderly and children.
+        <span style="color: magenta;">To this end, we propose the first robot task planning benchmark that systematically models vague REs grounded in pragmatic theory (REI-Bench), where we discover that the vagueness of REs can severely degrade robot planning performance, leading to success rate drops of up to 36.9%.</span> 
+        We also observe that most failure cases stem from missing objects in planners. 
+        To mitigate the REs issue, we propose a simple yet effective approach: task-oriented context cognition, 
+        which generates clear instructions for robots, achieving state-of-the-art performance compared to aware prompts, chains of thought, and in-context learning. 
+        By tackling the overlooked issue of vagueness, this work contributes to the research community by advancing real-world task planning and making robots more accessible to non-expert users, e.g., the elderly and children.
       </p>
     </section>
 
