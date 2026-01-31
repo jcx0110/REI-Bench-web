@@ -830,8 +830,7 @@
   </p>
   <div class="image-display-prompting" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
       <div style="width: 700px; text-align: center;">
-          <img id="imgPrompting" src="media/fig2_gemma.png" style="display: block; margin: 0 auto;">s
-          <p id="labelPrompting" style="text-align: center;">LLaMA3.1-8B + SayCan</p>
+          <img id="imgPrompting" src="media/fig2_gemma.png" style="display: block; margin: 0 auto;">
           <select id="selectPrompting" style="width: 700px;"></select>
       </div>
   </div>
@@ -847,7 +846,6 @@
 
     const selectPrompting = document.getElementById("selectPrompting");
     const imgPrompting = document.getElementById("imgPrompting");
-    const labelPrompting = document.getElementById("labelPrompting");
 
     prompting_imageList.forEach((item, index) => {
         const option = new Option(item.name, index);
@@ -859,7 +857,6 @@
     function updateImagesPrompting() {
         const indexPrompting = parseInt(selectPrompting.value);
         imgPrompting.src = prompting_imageList[indexPrompting].path;
-        labelPrompting.textContent = prompting_imageList[indexPrompting].name;
     }
 
     selectPrompting.addEventListener("change", updateImagesPrompting);
