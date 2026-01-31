@@ -140,6 +140,13 @@
       background: #4b5563;
     }
 
+    .buttons a.disabled {
+      background: #9ca3af;
+      color: #d1d5db;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
     .footer {
       margin-top: 40px;
       font-size: 1.1em;
@@ -407,7 +414,7 @@
     <div class="buttons">
         <a href="https://github.com/homeostasis-diversity/RIE-Bench" target="_blank" rel="noopener noreferrer">Code</a>
         <a href="https://openreview.net/pdf?id=vmBIF25KLf" target="_blank" rel="noopener noreferrer">Paper</a>
-        <a href="https://arxiv.org/abs/2505.10872" target="_blank" rel="noopener noreferrer">arXiv</a>
+        <a href="javascript:void(0)" class="disabled" aria-disabled="true">arXiv</a>
         <a href="#bibtex" target="_blank" rel="noopener noreferrer">BibTeX</a>
     </div>
 
