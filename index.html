@@ -830,7 +830,7 @@
   </p>
   <div class="image-display-prompting" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
       <div style="width: 700px; text-align: center;">
-          <img id="imgPrompting" src="media/fig2_gemma.png" style="display: block; margin: 0 auto;">
+          <img id="imgPrompting" src="media/figure6-llama.png" style="display: block; margin: 0 auto;">
           <select id="selectPrompting" style="width: 700px;"></select>
       </div>
   </div>
@@ -853,6 +853,7 @@
     });
 
     selectPrompting.selectedIndex = 0;
+    updateImagesPrompting();
 
     function updateImagesPrompting() {
         const indexPrompting = parseInt(selectPrompting.value);
