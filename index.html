@@ -706,9 +706,14 @@
         }
 
 
+        function setImmediate() {
+          box.innerHTML = currentText;
+        }
+
         return {
           typeInitial,
-          typeToNext
+          typeToNext,
+          setImmediate
         };
       }
 
@@ -716,7 +721,7 @@
         for (let i = 0; i < stages[0].length; i++) {
           const boxObj = createBox(0, i);
           boxObjects.push(boxObj);
-          await new Promise(resolve => boxObj.typeInitial(resolve));
+          boxObj.setImmediate();
           await new Promise(r => setTimeout(r, 200));
         }
         mainBtn.disabled = false;
